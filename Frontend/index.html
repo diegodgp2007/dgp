@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Libro de Visitas</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <h1>📖 Libro de Visitas</h1>
+      <form id="formulario">
+        <input type="text" id="nombre" placeholder="Tu nombre" required autocomplete="off">
+        <textarea id="mensaje" placeholder="Escribe tu mensaje aquí..." required></textarea>
+        <button type="submit">Enviar mensaje</button>
+      </form>
+      <h2>Mensajes recientes</h2>
+      <div id="mensajes"></div>
+    </div>
+  </div>
+  <!-- Modal para editar mensaje -->
+  <div id="modal-editar" class="modal">
+    <div class="modal-contenido">
+      <span class="modal-cerrar" id="cerrar-modal">&times;</span>
+      <h3>Editar mensaje</h3>
+      <textarea id="nuevo-mensaje" rows="4"></textarea>
+      <button id="guardar-cambios">Guardar cambios</button>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,4 +1,4 @@
-const API_URL = 'http://135.119.192.98:5050/api/mensajes';
+const API_URL = 'http://4.204.9.76/api/mensajes';
 
 function getAvatar(nombre) {
   if (!nombre) return '👤';
